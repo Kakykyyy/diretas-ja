@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Um documentário interativo sobre o movimento Diretas Já e a redemocratização do Brasil."
+    />
+    <title>Diretas Já! — A voz de um povo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="site.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#historia">Ir para a história</a>
+    <header class="top">
+      <a href="#abertura" class="brand">DIRETAS<span> JÁ!</span></a>
+      <nav aria-label="Capítulos">
+        <a href="#linha">Linha do tempo</a><a href="#ruas">Fotografias</a
+        ><a href="#quiz">Quiz</a>
+      </nav>
+      <button class="present" id="start">
+        Iniciar apresentação <span aria-hidden="true">↗</span>
+      </button>
+      <div class="reading"><i></i></div>
+    </header>
+    <main>
+      <section class="hero" id="abertura">
+        <div
+          class="hero-art"
+          role="img"
+          aria-label="Multidão no comício das Diretas Já no Vale do Anhangabaú"
+        ></div>
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot"></span> ARQUIVO HISTÓRICO <b>•</b> BRASIL,
+            1983–1984
+          </p>
+          <h1>DIRETAS<br /><em>JÁ!</em></h1>
+          <p class="deck">O Brasil nas ruas pela democracia</p>
+          <p>Um povo inteiro foi às ruas para escolher seu próprio futuro.</p>
+          <p class="group-credit">
+            <strong>Turma 2001</strong><br />Diogenes · Gabriel · Victor · Kaua
+            · Kaio Gabriel
+          </p>
+          <a class="button" href="#historia"
+            >Começar a história <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="hero-foot">
+          <span>01 / 10 &nbsp; — &nbsp; A ABERTURA</span
+          ><span
+            >VALE DO ANHANGABAÚ, SP · 16 ABR 1984<br />FOTO · ACERVO FOLHA</span
+          >
+        </div>
+      </section>
+      <section class="paper chapter" id="historia">
+        <div class="split">
+          <div>
+            <p class="eyebrow">02 / 10 &nbsp; • &nbsp; O CONTEXTO</p>
+            <h2>Antes das Diretas Já, como estava o Brasil?</h2>
+          </div>
+          <p class="intro">
+            Durante a ditadura militar, a população não podia votar diretamente
+            para presidente. Com a abertura política, a pressão por esse direito
+            ganhou as ruas.
+          </p>
+        </div>
+        <div class="grid context">
+          <details>
+            <summary><span>01</span><strong>O golpe de 1964</strong></summary>
+            <p>
+              O golpe derrubou João Goulart e deu início a uma ditadura que
+              restringiu direitos políticos e civis. A escolha do presidente
+              passou a ocorrer por via indireta.
+            </p>
+          </details>
+          <details>
+            <summary><span>02</span><strong>A crise econômica</strong></summary>
+            <p>
+              A inflação corroía salários e o endividamento agravava as
+              dificuldades do país no começo dos anos 1980. Greves e outras
+              mobilizações ampliaram a pressão por mudanças.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span>03</span><strong>A abertura política</strong>
+            </summary>
+            <p>
+              Iniciada no governo Geisel, a abertura avançou aos poucos. A Lei
+              da Anistia de 1979 permitiu o retorno de exilados, e as eleições
+              diretas para governador em 1982 deram espaço à oposição.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="green chapter" id="movimento">
+        <p class="eyebrow">03 / 10 &nbsp; • &nbsp; A REIVINDICAÇÃO</p>
+        <div class="split">
+          <div>
+            <h2>O povo queria escolher seu presidente!</h2>
+            <p>
+              A campanha cresceu entre 1983 e 1984 em torno da proposta do
+              deputado Dante de Oliveira. Sua aprovação devolveria aos eleitores
+              a escolha direta de presidente e vice-presidente.
+            </p>
+          </div>
+          <div>
+            <div class="crowd" aria-hidden="true"></div>
+            <p class="caption">ILUSTRAÇÃO DA EXPANSÃO DO MOVIMENTO</p>
+          </div>
+        </div>
+        <ul class="tags">
+          <li>Voto direto</li>
+          <li>Democracia</li>
+          <li>Participação popular</li>
+          <li>Fim da escolha indireta</li>
+        </ul>
+      </section>
+      <section class="paper chapter" id="linha">
+        <p class="eyebrow">04 / 10 &nbsp; • &nbsp; A CRONOLOGIA</p>
+        <h2>Linha do tempo</h2>
+        <p>Escolha uma data para acompanhar a história.</p>
+        <div class="timeline">
+          <div id="dates"></div>
+          <article id="event" aria-live="polite"></article>
+        </div>
+      </section>
+      <section class="chapter ink" id="vozes">
+        <p class="eyebrow">05 / 10 &nbsp; • &nbsp; OS PERSONAGENS</p>
+        <h2>As vozes que marcaram a história</h2>
+        <p>
+          Políticos, artistas e lideranças sindicais ajudaram a levar a campanha
+          a diferentes públicos.
+        </p>
+        <div class="grid" id="people"></div>
+      </section>
+      <section class="paper chapter" id="ruas">
+        <p class="eyebrow">06 / 10 &nbsp; • &nbsp; A GALERIA</p>
+        <h2>Quando o Brasil tomou as ruas</h2>
+        <p>
+          Abra uma fotografia para ver a cena ampliada e conhecer a história do
+          comício.
+        </p>
+        <div class="grid" id="gallery"></div>
+      </section>
+      <section class="green chapter" id="votacao">
+        <p class="eyebrow">07 / 10 &nbsp; • &nbsp; 25 DE ABRIL DE 1984</p>
+        <div class="split">
+          <div>
+            <h2>O momento decisivo</h2>
+            <p>
+              A Câmara votou a PEC nº 5/1983. A proposta precisava de 320 votos
+              a favor. Recebeu 298 e foi rejeitada por uma diferença de 22
+              votos.
+            </p>
+            <p>
+              <a
+                href="https://www.camara.leg.br/noticias/402233-emenda-dante-de-oliveira-mobilizou-a-politica-diz-presidente-da-camara"
+                >Consultar a contagem na Câmara dos Deputados ↗</a
+              >
+            </p>
+          </div>
+          <div>
+            <div
+              class="ballot"
+              role="img"
+              aria-label="298 votos a favor, 22 a menos que os 320 necessários"
+            >
+              <span></span><b></b>
+            </div>
+            <div class="ballot-label">
+              <span>298 votos a favor</span><span>Meta · 320</span>
+            </div>
+            <div id="votes" class="votes"></div>
+            <p id="vote-detail" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+      <section class="paper chapter" id="legado">
+        <p class="eyebrow">08 / 10 &nbsp; • &nbsp; O LEGADO</p>
+        <div class="split">
+          <div>
+            <h2>Mesmo sem a aprovação, a história mudou</h2>
+            <p>
+              A campanha fortaleceu a oposição e mostrou a capacidade de
+              mobilização da sociedade civil. A pressão por eleições livres
+              continuou durante a transição para o governo civil.
+            </p>
+          </div>
+          <div class="poster">
+            <strong>1989</strong>
+            <p>
+              O Brasil voltou a eleger diretamente o presidente da República.
+            </p>
+            <small
+              >Em 1985, Tancredo Neves foi eleito pelo Colégio Eleitoral. A
+              Constituição de 1988 marcou a nova ordem democrática.</small
+            >
+          </div>
+        </div>
+      </section>
+      <section class="chapter ink" id="quiz">
+        <p class="eyebrow">09 / 10 &nbsp; • &nbsp; TESTE SEUS CONHECIMENTOS</p>
+        <h2>Você aprendeu sobre as Diretas Já?</h2>
+        <div id="quiz-box"></div>
+      </section>
+      <section class="chapter ending" id="fim">
+        <p class="eyebrow">10 / 10 &nbsp; • &nbsp; ENCERRAMENTO</p>
+        <h2>A democracia é uma conquista de todos.</h2>
+        <p>
+          As Diretas Já mostraram que a população queria participar das decisões
+          do país e escolher seus representantes. Mesmo com a derrota da emenda,
+          a campanha se tornou um símbolo da luta pela democracia.
+        </p>
+        <blockquote>“Eu quero votar para presidente!”</blockquote>
+        <p class="group-credit">
+          <strong>Turma 2001</strong><br />Diogenes · Gabriel · Victor · Kaua ·
+          Kaio Gabriel
+        </p>
+        <small
+          >Reivindicação que resume a campanha · Foto do Vale do Anhangabaú,
+          Acervo Folha</small
+        >
+      </section>
+    </main>
+    <footer class="chapter paper" id="fontes">
+      <p class="eyebrow">ACERVO & CRÉDITOS</p>
+      <h2>Fontes e referências</h2>
+      <ul id="sources"></ul>
+      <a class="button" href="#abertura">Voltar ao topo ↑</a>
+    </footer>
+    <dialog id="photo" aria-label="Fotografia ampliada">
+      <button class="close" aria-label="Fechar fotografia">×</button>
+      <div id="photo-content"></div>
+    </dialog>
+    <dialog id="slides" aria-label="Modo apresentação">
+      <div class="slide-top">
+        <span>DIRETAS JÁ! / APRESENTAÇÃO</span
+        ><button id="exit">
+          Sair da apresentação <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div id="slide-body" aria-live="polite"></div>
+      <div class="slide-controls">
+        <button id="prev">← Anterior</button><span id="slide-count"></span
+        ><button id="next">Próximo →</button>
+      </div>
+      <div class="slide-progress"><i></i></div>
+    </dialog>
+  </body>
+</html>

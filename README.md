@@ -1,8 +1,6 @@
 # Diretas Já — A voz de um povo
 
-Site educativo da Turma 2001.
-
-Integrantes — Diogenes, Gabriel, Victor, Kaua e Kaio Gabriel.
+Site educativo
 
 Site publicado — https://diretas-ja.vercel.app
 
